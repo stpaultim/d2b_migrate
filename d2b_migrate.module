@@ -1,53 +1,54 @@
 <?php
 
 define('D2B_MIGRATE_UPDATE_DEFAULT_URL', 'https://updates.backdropcms.org/release-history');
+define('D2B_MIGRATE_MENU_PATH', 'admin/config/system/d2b_migrate');
 
 /**
 * Implements hook_menu().
 */
 function d2b_migrate_menu() {
-  $items['d2b-migrate'] = array(
+  $items[D2B_MIGRATE_MENU_PATH] = array(
     'page callback' => 'backdrop_goto',
     'page arguments' => array('d2b-migrate/start'),
     'access arguments' => array('execute d2b'),
     'type' => MENU_CALLBACK,
   );
-  $items['d2b-migrate/start'] = array(
+  $items[D2B_MIGRATE_MENU_PATH . '/start'] = array(
     'title' => 'Start',
     'page callback' => 'd2b_migrate_main_page',
     'page arguments' => array('start'),
     'access arguments' => array('execute d2b'),
     'type' => MENU_CALLBACK,
   );
-  $items['d2b-migrate/source'] = array(
+  $items[D2B_MIGRATE_MENU_PATH . '/source'] = array(
     'title' => 'Source database setup',
     'page callback' => 'd2b_migrate_main_page',
     'page arguments' => array('source'),
     'access arguments' => array('execute d2b'),
     'type' => MENU_CALLBACK,
   );
-  $items['d2b-migrate/analysis'] = array(
+  $items[D2B_MIGRATE_MENU_PATH . '/analysis'] = array(
     'title' => 'Source database analysis',
     'page callback' => 'd2b_migrate_main_page',
     'page arguments' => array('analysis'),
     'access arguments' => array('execute d2b'),
     'type' => MENU_CALLBACK,
   );
-  $items['d2b-migrate/backup'] = array(
+  $items[D2B_MIGRATE_MENU_PATH . '/backup'] = array(
     'title' => 'Set up database backup',
     'page callback' => 'd2b_migrate_main_page',
     'page arguments' => array('backup'),
     'access arguments' => array('execute d2b'),
     'type' => MENU_CALLBACK,
   );
-  $items['d2b-migrate/files'] = array(
+  $items[D2B_MIGRATE_MENU_PATH . '/files'] = array(
     'title' => 'Files backup',
     'page callback' => 'd2b_migrate_main_page',
     'page arguments' => array('files'),
     'access arguments' => array('execute d2b'),
     'type' => MENU_CALLBACK,
   );
-  $items['d2b-migrate/restore'] = array(
+  $items[D2B_MIGRATE_MENU_PATH . '/restore'] = array(
     'title' => 'Migrate database',
     'page callback' => 'd2b_migrate_main_page',
     'page arguments' => array('restore'),
