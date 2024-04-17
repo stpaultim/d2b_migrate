@@ -906,7 +906,7 @@ function d2b_migrate_files_form($form, &$form_state) {
   $source = d2b_migrate_get_active_database();
   $form['help'] = array(
     '#type' => 'help',
-    '#markup' => t('Copy "managed" files from the source site. Managed files are files with a database record. Many files in the public files directory may not have a database record, such as default images and image styles. This method of migrating files requires the file URL be known and accessible over http, and is unreliable. The recommended option for migrating files is to manually copy the directory contents from the server.'),
+    '#markup' => t('<b>The recommended option for migrating files is to manually copy the contents of the files directory on your Drupal 7 site into the files directory for your new Backdrop CMS site and then skip to the next step.</b><br><br>The tool provided below works with all "managed" files. Managed files are files with a database record. Many files in the public files directory may not have a database record, such as default images and image styles. This method of migrating files requires the file URL be known and accessible over http, and is unreliable, please use this tool with caution.'),
   );
   $form['source_url'] = array(
     '#type' => 'textfield',
