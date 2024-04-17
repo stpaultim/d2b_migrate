@@ -18,9 +18,7 @@ This module will connect to the Drupal site, show information about which module
 and allow to install available modules automatically. In the next step the Drupal 7 database will be imported into your new site 
 and you can begin "Upgrade Database" process that will convert your D7 database to BackdropCMS. 
 
-Please visit the [wiki page](https://github.com/backdrop-contrib/d2b_migrate/wiki) for this module for information and to find a list of ["known issues"](https://github.com/backdrop-contrib/d2b_migrate/wiki/Know-Issues-with-Module) that you should watch out for. 
-
-This module is still under development, we have created a list of ["known issues"](https://github.com/backdrop-contrib/d2b_migrate/wiki/Know-Issues-with-Module) in the WIKI that you should watch out for. 
+Please visit the [wiki page](https://github.com/backdrop-contrib/d2b_migrate/wiki) for this module for more information. This module is still under development, we have created a list of ["known issues"](https://github.com/backdrop-contrib/d2b_migrate/wiki/Know-Issues-with-Module) that you should watch out for. 
 
 License
 -------
